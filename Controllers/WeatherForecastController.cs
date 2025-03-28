@@ -1,5 +1,7 @@
-﻿ausing Microsoft.AspNetCore.Mvc;
+﻿
 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 namespace NguyenManhHung_2122110438.Controllers
 {
     [ApiController]
