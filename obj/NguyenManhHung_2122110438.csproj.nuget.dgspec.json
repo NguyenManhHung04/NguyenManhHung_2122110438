@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\LENOVO\\OneDrive\\Desktop\\NguyenManhHung_2122110438-master\\NguyenManhHung_2122110438.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\LENOVO\\OneDrive\\Desktop\\NguyenManhHung_2122110438-master\\NguyenManhHung_2122110438.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\NguyenManhHung_2122110438-master\\NguyenManhHung_2122110438.csproj",
+        "projectName": "NguyenManhHung_2122110438",
+        "projectPath": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\NguyenManhHung_2122110438-master\\NguyenManhHung_2122110438.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\NguyenManhHung_2122110438-master\\obj\\",
+=======
     "D:\\asp\\NguyenManhHung_2122110438\\NguyenManhHung_2122110438\\NguyenManhHung_2122110438.csproj": {}
   },
   "projects": {
@@ -12,6 +25,7 @@
         "projectPath": "D:\\asp\\NguyenManhHung_2122110438\\NguyenManhHung_2122110438\\NguyenManhHung_2122110438.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
         "outputPath": "D:\\asp\\NguyenManhHung_2122110438\\NguyenManhHung_2122110438\\obj\\",
+>>>>>>> 9fae4ce55b2735e28fb3aaf2de6efcdeed3b1bfa
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,6 +74,13 @@
               "target": "Package",
               "version": "[9.0.3, )"
             },
+<<<<<<< HEAD
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+=======
+>>>>>>> 9fae4ce55b2735e28fb3aaf2de6efcdeed3b1bfa
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
