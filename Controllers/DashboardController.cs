@@ -16,6 +16,8 @@ namespace NguyenManhHung_2122110438.Controllers
 
         public async Task<IActionResult> Index()
         {
+            Console.WriteLine("==== Dashboard Controller Index action is running ====");
+
             var products = await _context.Products.Include(p => p.Category).ToListAsync();
             var categories = await _context.Categories.ToListAsync();
             var banners = await _context.Banners.ToListAsync();

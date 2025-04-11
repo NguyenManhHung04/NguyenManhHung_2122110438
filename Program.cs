@@ -3,11 +3,13 @@ using NguyenManhHung_2122110438.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Đăng ký DbContext với cấu hình từ appsettings.json
+// Đăng ký DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddControllers();
+// 👉 Dùng Controllers với View
+builder.Services.AddControllersWithViews();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -20,13 +22,14 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Nếu có CSS/JS
 
+app.UseRouting();
 app.UseAuthorization();
 
-app.MapControllers();
+// 👉 Thêm route mặc định cho MVC
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Dashboard}/{action=Index}/{id?}");
 
-<<<<<<< HEAD
 app.Run();
-=======
-app.Run();
->>>>>>> 9fae4ce55b2735e28fb3aaf2de6efcdeed3b1bfa

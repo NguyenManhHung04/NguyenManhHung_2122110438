@@ -1,0 +1,35 @@
+﻿@model NguyenManhHung_2122110438.Model.Product
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-danger">
+        <div class="card-header bg-danger text-white">
+            <h4>⚠️ Xác nhận xóa sản phẩm</h4>
+        </div>
+        <div class="card-body">
+            <p>Bạn có chắc chắn muốn xóa sản phẩm sau không?</p>
+
+            <dl class="row">
+                <dt class="col-sm-3">Tên sản phẩm</dt>
+                <dd class="col-sm-9">@Model.Name</dd>
+
+                <dt class="col-sm-3">Mô tả</dt>
+                <dd class="col-sm-9">@Model.Description</dd>
+
+                <dt class="col-sm-3">Danh mục</dt>
+                <dd class="col-sm-9">@Model.Category?.Name</dd>
+            </dl>
+
+            <form asp-action="DeleteConfirmed" method="post">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="fas fa-trash-alt"></i> Xóa
+                </button>
+                <a asp-action="Index" class="btn btn-secondary ml-2">🔙 Quay lại</a>
+            </form>
+        </div>
+    </div>
+</div>
