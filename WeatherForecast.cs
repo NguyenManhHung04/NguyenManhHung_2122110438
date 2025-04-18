@@ -1,4 +1,4 @@
-namespace NguyenManhHung_2122110438
+namespace NguyenManhHung_2122110438_asp
 {
     public class WeatherForecast
     {

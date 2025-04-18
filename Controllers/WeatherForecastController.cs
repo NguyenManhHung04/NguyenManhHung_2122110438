@@ -1,8 +1,6 @@
-﻿
+﻿using Microsoft.AspNetCore.Mvc;
 
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-namespace NguyenManhHung_2122110438.Controllers
+namespace NguyenManhHung_2122110438_asp.Controllers
 {
     [ApiController]
     [Route("[controller]")]

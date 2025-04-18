@@ -1,18 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-
-namespace NguyenManhHung_2122110438.Model
+﻿namespace NguyenManhHung_2122110438_asp.Model
 {
     public class Product
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-<<<<<<< HEAD
-        public int CategoryId { get; set; }  // Tham chiếu đến Category
-        public Category Category { get; set; }  // Quan hệ với Category
-=======
-        public string Category { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
 
->>>>>>> 9fae4ce55b2735e28fb3aaf2de6efcdeed3b1bfa
+        public decimal Price { get; set; }
+        public bool IsActive { get; set; } = true;
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        // Quan hệ với danh mục (Category)
+        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
+
+        // Quan hệ với thương hiệu (Brand) => bạn cần thêm
+        public int BrandId { get; set; }
+        public Brand? Brand { get; set; }
     }
 }

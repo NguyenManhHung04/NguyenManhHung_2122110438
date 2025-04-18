@@ -1,18 +1,28 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NguyenManhHung_2122110438.Data;
+using NguyenManhHung_2122110438_asp.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Đăng ký DbContext với cấu hình từ appsettings.json
+// Kết nối Database
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(connectionString));
 
-builder.Services.AddControllers();
+// Fix lỗi JSON vòng lặp (nếu có quan hệ navigation giữa các model)
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
+
+// Swagger hỗ trợ test API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Middleware pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -25,8 +35,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-<<<<<<< HEAD
 app.Run();
-=======
-app.Run();
->>>>>>> 9fae4ce55b2735e28fb3aaf2de6efcdeed3b1bfa
