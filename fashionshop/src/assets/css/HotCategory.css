@@ -1,0 +1,65 @@
+/* HotCategory.css */
+.hot-category-layout {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .hot-category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hot-category-item {
+    border: 1px solid #e0e0e0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    transition: all 0.3s ease;
+    height: 200px;
+  }
+  
+  .hot-category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .hot-category-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .category-season {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .hot-category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hot-category-item {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    
+    .hot-category-text {
+      padding: 1rem;
+      text-align: center;
+    }
+  }

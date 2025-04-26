@@ -1,0 +1,37 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NguyenManhHung_2122110438_asp
+build_property.RootNamespace = NguyenManhHung_2122110438_asp
+<<<<<<< HEAD
+build_property.ProjectDir = D:\asp\NguyenManhHung_2122110438\
+=======
+build_property.ProjectDir = D:\asp\NguyenManhHung_2122110438_asp\NguyenManhHung_2122110438_asp\
+>>>>>>> 7b7392b0c7ab2ccda59f96e27d30087dc7670d2e
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
+build_property.MSBuildProjectDirectory = D:\asp\NguyenManhHung_2122110438
+=======
+build_property.MSBuildProjectDirectory = D:\asp\NguyenManhHung_2122110438_asp\NguyenManhHung_2122110438_asp
+>>>>>>> 7b7392b0c7ab2ccda59f96e27d30087dc7670d2e
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
